@@ -35,18 +35,19 @@
 ## Roadmap
 - [ ] REST Requests
 - [ ] Stars JSON Parsing
-- [ ] Stylish UI Design
 - [ ] Load 3D Models Dynamically
 - [ ] Load Texture Images Dynamically
 - [ ] Apply Textures to Models Dynamically
 - [ ] User Search Function
 - [ ] Simple 3D Model Interactions
+- [ ] Stylish UI Design
+- [ ] Low Res + Dithering Shaders
 
 ## Contributing
 
 ### Prerequisites
 - [Download Git for your Operating System](https://git-scm.com/)
-- [Download Godot v3.3.3](https://godotengine.org/download)
+- [Download Godot v3.4.4](https://godotengine.org/download)
 
 ### Installation
 1. Clone the Repository
