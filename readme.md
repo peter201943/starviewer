@@ -8,7 +8,7 @@
 ## Contents
 - [Contents](#contents)
 - [About](#about)
-- [Usage](#getting-started)
+- [Getting Started](#getting-started)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
   - [Prerequisites](#prerequisites)
@@ -24,13 +24,23 @@
 ## Getting Started
 1. See the [Releases Page](https://github.com/peter201943/starviewer/releases) for the latest HTML5 export.
 2. Unzip the downloaded `starviewer.zip`
-3. Modify the `star_provider.json` with the following details:
+3. Modify the `settings.json` with the location of your `stars.json`
     ```json
     {
-      "location": "https://your-server-here.com/stars-json-endpoint.json"
+      "location": "https://your-server-here.domain/endpoint/filename.json"
     }
     ```
-4. On your server, upload the full contents of the starviewer folder (`index.html`, `index.js`, `index.pck`, `index.wasm`, `index.audio.worklet.js`, `star_provider.json`) to an appropriate path
+4. On your server, make sure you have your sound effect files and song files uploaded
+5. Modify the `settings.json` with the mapping of your sound files:
+    ```json
+    {
+      "music": "/path/to/song.ogg",
+      "button.hover.sfx": "path/to/button_hover.wav",
+      "button.press.sfx": "path/to/button_press.wav",
+      // (any other sfx you add)
+    }
+    ```
+6. On your server, upload the full contents of the starviewer folder (`index.html`, `index.js`, `index.pck`, `index.wasm`, `index.audio.worklet.js`, `star_provider.json`) to an appropriate path
 
 ## Roadmap
 - [ ] REST Requests
@@ -38,8 +48,11 @@
 - [ ] Load 3D Models Dynamically
 - [ ] Load Texture Images Dynamically
 - [ ] Apply Textures to Models Dynamically
+- [ ] Settings JSON
 - [ ] User Search Function
 - [ ] Simple 3D Model Interactions
+- [ ] Load Sound Effects from Folder at Runtime
+- [ ] Load Music Dynamically
 - [ ] Stylish UI Design
 - [ ] Low Res + Dithering Shaders
 
