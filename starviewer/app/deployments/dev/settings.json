@@ -1,0 +1,6 @@
+{
+  "settings.role":  "dev",
+  "stars.path":     "/warpzone/stars.json",
+  "models.path":    "/models/",
+  "textures.path":  "/textures/"
+}

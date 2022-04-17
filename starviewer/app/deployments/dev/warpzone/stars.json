@@ -1,0 +1,1085 @@
+{
+  "CableTwo": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "Chwoka": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "Exit605": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "MikeOMiami": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "Nvllcasting": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "PeridotRose": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "Urodov": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "arbyparty": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "asterkallium": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "crimepuddles": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "curs3dsynth": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "gregisonline": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "kmerolzzzz": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "noombers": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "pastSeth": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "placeholder": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "spencethebence": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "steinorb": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ],
+  "waterslapofficial": [
+    {
+      "material": "Spicy",
+      "model": "Urchin",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Urchin",
+      "instances": 2
+    },
+    {
+      "material": "Wireframe",
+      "model": "SunPiece",
+      "instances": 1
+    },
+    {
+      "material": "Eclipsed",
+      "model": "Utah",
+      "instances": 1
+    },
+    {
+      "material": "Spicy",
+      "model": "SunToken",
+      "instances": 1
+    },
+    {
+      "material": "Cloudy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "cactus",
+      "instances": 1
+    },
+    {
+      "material": "Moonlit",
+      "model": "MoonToken",
+      "instances": 1
+    },
+    {
+      "material": "Normal",
+      "model": "Cube",
+      "instances": 1
+    },
+    {
+      "material": "Pointy",
+      "model": "Pepper",
+      "instances": 1
+    },
+    {
+      "material": "Peppy",
+      "model": "Star",
+      "instances": 1
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 
 # Deployments
 
-Holds the "main scenes" selected in final export.
+Config files for various deployment methods.
+
+NOT the "main scene", see `app/StarViewer.tscn`.
