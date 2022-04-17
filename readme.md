@@ -13,7 +13,7 @@
 - [Contributing](#contributing)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Major Files](#major-files)
+  - [Getting Help](#getting-help)
   - [Accepting Changes](#accepting-changes)
 - [License](#license)
 - [Contact](#contact)
@@ -24,23 +24,27 @@
 ## Getting Started
 1. See the [Releases Page](https://github.com/peter201943/starviewer/releases) for the latest HTML5 export.
 2. Unzip the downloaded `starviewer.zip`
-3. Modify the `settings.json` with the location of your `stars.json`
+3. Modify the `settings.json` with the location of your `stars.json`.
+    This can be either a local path or a server endpoint, but you must not use both:
     ```json
     {
-      "location": "https://your-server-here.domain/endpoint/filename.json"
+      "stars.path": "path/to/stars.json",
+      "stars.endpoint": "https://your-server-here.domain/endpoint/filename.json"
     }
     ```
-4. On your server, make sure you have your sound effect files and song files uploaded
-5. Modify the `settings.json` with the mapping of your sound files:
+    You can use the `stars.path` parameter if the `stars.json` is hosted by the same server that hosts the starviewer.
+    You must use the `stars.endpoint` parameter if the `stars.json` are NOT hosted on the same server that hosts the starviewer.
+4. Modify the `settings.json` with the location of your `models/` and `textures/` folders.
+    These can both point to the same folder if both the models and the textures are together.
+    This will not work on recursively-nested items (the folders must not contain folders):
     ```json
     {
-      "music": "/path/to/song.ogg",
-      "button.hover.sfx": "path/to/button_hover.wav",
-      "button.press.sfx": "path/to/button_press.wav",
-      // (any other sfx you add)
+      "models.path":    "path/to/models/",
+      "textures.path":  "path/to/textures/"
     }
     ```
-6. On your server, upload the full contents of the starviewer folder (`index.html`, `index.js`, `index.pck`, `index.wasm`, `index.audio.worklet.js`, `star_provider.json`) to an appropriate path
+5. On your server, upload the full contents of the starviewer folder
+    (`index.html`, `index.js`, `index.pck`, `index.wasm`, `index.audio.worklet.js`, `star_provider.json`) to an appropriate path
 
 ## Roadmap
 - [ ] REST Requests
@@ -69,9 +73,8 @@
     ```
 2. Open the Project (from Godot's launcher)
 
-### Major Files
-- `test_scene.tscn` (for local development)
-- `starviewer.tscn` (for full app)
+### Getting Help
+- Each folder inside the project folder contains a `readme.md` with documentation
 
 ### Accepting Changes
 This is a low-priority project for peter201943 and as such pull requests are not likely to be accepted.
