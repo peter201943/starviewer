@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://app/concepts/camera/fps_mouselook.gd" type="Script" id=1]
+[ext_resource path="res://assets/misc/default_spatialmaterial.tres" type="Material" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[sub_resource type="CapsuleMesh" id=2]
+material = ExtResource( 2 )
+
+[node name="StarUser" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49765, 2.44345, 4.55242 )
+
+[node name="body" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="mesh" type="MeshInstance" parent="body"]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="head" type="Spatial" parent="."]
+
+[node name="camera" type="Camera" parent="head"]
+
+[node name="fps_mouselook" type="Node" parent="head"]
+script = ExtResource( 1 )
