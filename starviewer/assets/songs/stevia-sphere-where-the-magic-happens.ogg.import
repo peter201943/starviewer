@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stevia-sphere-where-the-magic-happens.ogg-714176369a5ea59e395dad849f994ae5.oggstr"
+
+[deps]
+
+source_file="res://assets/songs/stevia-sphere-where-the-magic-happens.ogg"
+dest_files=[ "res://.import/stevia-sphere-where-the-magic-happens.ogg-714176369a5ea59e395dad849f994ae5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
