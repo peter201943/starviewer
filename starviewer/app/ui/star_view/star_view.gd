@@ -31,18 +31,19 @@ func _on_info_pressed():
     return
   var dir_info = Label.new()
   dir_info.text = \
-    "# user://\n" + \
-    "# " + ProjectSettings.globalize_path("user://") + "\n" + \
+    "# user://" + \
+    " (" + ProjectSettings.globalize_path("user://") + ")\n" + \
     Settings.dir_contents("user://") + \
-    "# res://\n" + \
-    "# " + ProjectSettings.globalize_path("res://") + "\n" + \
+    "# res://" + \
+    " (" + ProjectSettings.globalize_path("res://") + ")\n" + \
     Settings.dir_contents("res://")
-  var settings_info = Settings.build_form(Settings.raw_settings)
+  var settings_info = SimpleDictionaryUI.new(Settings.raw_settings)
   info_box = VSplitContainer.new()
   self.add_child(info_box)
   info_box.add_child(settings_info)
   info_box.add_child(dir_info)
-  JavaScript.eval("alert(`(TEMP) StarViewerSettings: ${JSON.stringify(StarViewerSettings)}`);")
+  if Settings.is_web_env():
+    JavaScript.eval("alert(`(TEMP) StarViewerSettings: ${JSON.stringify(StarViewerSettings)}`);")
 
 func _on_button_entered():
   sfx_btn_enter.play()

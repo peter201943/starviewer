@@ -13,7 +13,11 @@ Parents the Model (GLTF) to itself.
 
 Then assigns the Texture as a mesh to the model.
 
-Does NOT care about #instances or who it belongs to.
+Does NOT care about #instances or who it belongs to - set these within the star viewer scene?
+(Question does exist about who should be instantiating the stars).
+((The Viewer! And the Viewer specifically should ebt he only one checking for the user stars)).
+
+DOES handle networking.
 """
 
 # var importer = SceneImporterGLTF.new()
