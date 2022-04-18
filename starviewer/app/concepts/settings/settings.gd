@@ -105,17 +105,19 @@ func load_settings():
 func dir_contents(path):
   """Misc Helper for debugging, such as trying to locate `settings.json`"""
   var dir = Directory.new()
+  var contents: String = ""
   if dir.open(path) == OK:
     dir.list_dir_begin()
     var file_name = dir.get_next()
     while file_name != "":
       if dir.current_is_dir():
-        print(file_name+"/")
+        contents = contents + file_name+"/"+"\n"
       else:
-        print(file_name)
+        contents = contents + file_name+"\n"
       file_name = dir.get_next()
   else:
-    print("An error occurred when trying to access the path.")
+    contents = contents + "-- ERROR --" + "\n"
+  return(contents)
 
 var darkness = 0.1
 var blueness = 0.1

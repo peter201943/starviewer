@@ -6,7 +6,7 @@ onready var sfx_btn_press: AudioStreamPlayer = get_node("sfx_btn_press")
 
 var pressed = false
 
-var info_label: GridContainer
+var info_box: VSplitContainer
 
 func _on_prev_star_pressed():
   sfx_btn_press.play()
@@ -26,18 +26,23 @@ func _on_search_pressed():
 func _on_info_pressed():
   sfx_btn_press.play()
   pressed = true
-  if is_instance_valid(info_label):
-    info_label.queue_free()
+  if is_instance_valid(info_box):
+    info_box.queue_free()
     return
-  # info_label = Label.new()
-  # info_label.text = \
-  #   "app_mode: " + "FIXME" + "\n" + \
-  #   "stars: (" + "FIXME" + ") FIXME" + "\n" + \
-  #   "models: (" + "FIXME" + ") FIXME" + "\n" + \
-  #   "textures: (" + "FIXME" + ") FIXME" + "\n"
-  info_label = Settings.build_form(Settings.raw_settings)
-  self.add_child(info_label)
-  print("TODO open info")
+  var dir_info = Label.new()
+  dir_info.text = \
+    "# user://\n" + \
+    "# " + ProjectSettings.globalize_path("user://") + "\n" + \
+    Settings.dir_contents("user://") + \
+    "# res://\n" + \
+    "# " + ProjectSettings.globalize_path("res://") + "\n" + \
+    Settings.dir_contents("res://")
+  var settings_info = Settings.build_form(Settings.raw_settings)
+  info_box = VSplitContainer.new()
+  self.add_child(info_box)
+  info_box.add_child(settings_info)
+  info_box.add_child(dir_info)
+  JavaScript.eval("alert(`(TEMP) StarViewerSettings: ${JSON.stringify(StarViewerSettings)}`);")
 
 func _on_button_entered():
   sfx_btn_enter.play()
