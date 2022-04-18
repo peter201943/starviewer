@@ -1,5 +1,5 @@
 {
-  "settings.role":  "prod",
+  "app.mode":       "prod",
   "stars.path":     null,
   "models.path":    null,
   "textures.path":  null

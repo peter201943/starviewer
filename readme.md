@@ -55,8 +55,6 @@
 - [ ] Settings JSON
 - [ ] User Search Function
 - [ ] Simple 3D Model Interactions
-- [ ] Load Sound Effects from Folder at Runtime
-- [ ] Load Music Dynamically
 - [ ] Stylish UI Design
 - [ ] Low Res + Dithering Shaders
 
