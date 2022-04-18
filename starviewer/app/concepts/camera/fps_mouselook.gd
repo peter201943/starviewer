@@ -42,7 +42,7 @@ func _input(event):
 func _process(delta):
   
   # (Cancel) Set/Reset Mouselook Controls
-  if Input.is_action_just_pressed("ui_cancel"):
+  if Input.is_action_just_pressed("ui_cancel") or Input.is_action_just_pressed("misc_toggle"):
     if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
       Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
       active = false

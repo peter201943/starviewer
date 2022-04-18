@@ -38,6 +38,15 @@ margin_top = -20.0
 margin_right = 27.0
 text = "Search"
 
+[node name="info" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -18.0
+margin_top = -20.0
+text = "?"
+
 [node name="sfx_btn_enter" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 
@@ -56,3 +65,6 @@ stream = ExtResource( 4 )
 [connection signal="mouse_entered" from="search" to="." method="_on_button_entered"]
 [connection signal="mouse_exited" from="search" to="." method="_on_button_exited"]
 [connection signal="pressed" from="search" to="." method="_on_search_pressed"]
+[connection signal="mouse_entered" from="info" to="." method="_on_button_entered"]
+[connection signal="mouse_exited" from="info" to="." method="_on_button_exited"]
+[connection signal="pressed" from="info" to="." method="_on_info_pressed"]

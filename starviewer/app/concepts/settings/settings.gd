@@ -2,6 +2,8 @@ extends Node
 
 """
 Will probably end up as some kind of singleton
+
+Lots of utilities in here as well, ugh
 """
 
 enum APP_MODE {UNSET, DEV, PROD}
@@ -16,6 +18,9 @@ class Loader:
       print("TODO Local Loading not Implemented")
     elif self.method == Loader.METHOD.NETWORK:
       print("TODO Network Loading not Implemented")
+
+# For pretty printing elsewhere
+var raw_settings: Dictionary
 
 # Controlling debug statements, additional controls, etcetera
 var app_mode: int = APP_MODE.UNSET
@@ -47,7 +52,7 @@ func load_json_file(path):
 func load_settings():
   """Load the Deployment JSON (settings.json)"""
   # Expects the settings file to accompany the `index.html`
-  var settings_map: Dictionary = load_json_file("user://settings.json")
+  raw_settings = load_json_file("user://settings.json")
   var acceptable_keys: Array = [
     "app.mode",
     "stars.path",
@@ -58,44 +63,44 @@ func load_settings():
     "textures.endpoint"
    ]
   # Check for any anomalous values and notify their existence
-  for potential_setting_name in settings_map.keys():
-    assert(acceptable_keys.has(potential_setting_name), "Unknown Setting: \"" + potential_setting_name + "\": \"" + settings_map[potential_setting_name] + "\", please fix settings.json")
+  for potential_setting_name in raw_settings.keys():
+    assert(acceptable_keys.has(potential_setting_name), "Unknown Setting: \"" + potential_setting_name + "\": \"" + raw_settings[potential_setting_name] + "\", please fix settings.json")
   # Check for any mutually exclusive values whilst loading
-  for setting_name in settings_map.keys():
+  for setting_name in raw_settings.keys():
     # App Mode
     if setting_name == "app.mode":
-      assert(["dev","prod"].has(settings_map[setting_name]), "Unknown App Mode: \"" + settings_map[setting_name] + "\", please fix settings.json")
-      if settings_map[setting_name] == "dev":
+      assert(["dev","prod"].has(raw_settings[setting_name]), "Unknown App Mode: \"" + raw_settings[setting_name] + "\", please fix settings.json")
+      if raw_settings[setting_name] == "dev":
         app_mode = APP_MODE.DEV
-      if settings_map[setting_name] == "prod":
+      if raw_settings[setting_name] == "prod":
         app_mode = APP_MODE.PROD
     # Stars
     if setting_name == "stars.path":
       assert(stars.method == Loader.METHOD.UNSET, "Attempted to define Stars' settings twice, please fix settings.json")
       stars.method = Loader.METHOD.LOCAL
-      stars.route = settings_map[setting_name]
+      stars.route = raw_settings[setting_name]
     if setting_name == "stars.endpoint":
       assert(stars.method == Loader.METHOD.UNSET, "Attempted to define Stars' settings twice, please fix settings.json")
       stars.method = Loader.METHOD.NETWORK
-      stars.route = settings_map[setting_name]
+      stars.route = raw_settings[setting_name]
     # Models
     if setting_name == "models.path":
       assert(models.method == Loader.METHOD.UNSET, "Attempted to define Models' settings twice, please fix settings.json")
       models.method = Loader.METHOD.LOCAL
-      models.route = settings_map[setting_name]
+      models.route = raw_settings[setting_name]
     if setting_name == "models.endpoint":
       assert(models.method == Loader.METHOD.UNSET, "Attempted to define Models' settings twice, please fix settings.json")
       models.method = Loader.METHOD.NETWORK
-      models.route = settings_map[setting_name]
+      models.route = raw_settings[setting_name]
     # Textures
     if setting_name == "textures.path":
       assert(textures.method == Loader.METHOD.UNSET, "Attempted to define Textures' settings twice, please fix settings.json")
       textures.method = Loader.METHOD.LOCAL
-      textures.route = settings_map[setting_name]
+      textures.route = raw_settings[setting_name]
     if setting_name == "textures.endpoint":
       assert(textures.method == Loader.METHOD.UNSET, "Attempted to define Textures' settings twice, please fix settings.json")
       textures.method = Loader.METHOD.NETWORK
-      textures.route = settings_map[setting_name]
+      textures.route = raw_settings[setting_name]
 
 func dir_contents(path):
   """Misc Helper for debugging, such as trying to locate `settings.json`"""
@@ -111,6 +116,64 @@ func dir_contents(path):
       file_name = dir.get_next()
   else:
     print("An error occurred when trying to access the path.")
+
+var darkness = 0.1
+var blueness = 0.1
+func build_form(data):
+  
+  """
+  Constructs a 2D Control Panel with Spacing and Text from the Dictionary
+  """
+  
+  darkness += 0.05
+  if darkness > 0.5: darkness = 0.1
+  blueness += 0.1
+  if blueness > 0.5: blueness = 0.1
+  
+  var grid = GridContainer.new()
+  var data_type = "(???)"
+  
+  if typeof(data) == 18:
+    data_type = "dict"
+    for key in data.keys():
+      var entry_value = data[key]
+      var entry_grid = GridContainer.new()
+      entry_grid.columns = 3
+      var key_label = Label.new()
+      key_label.name = "key"
+      key_label.text = str(key)
+      key_label.add_color_override("font_color", Color(0,1,0,1))
+      entry_grid.add_child(key_label)
+      entry_grid.add_child(VSeparator.new())
+      entry_grid.add_child(build_form(entry_value))
+      
+      var panel = PanelContainer.new()
+      panel.name = "panel"
+      var style = StyleBoxFlat.new()
+      style.bg_color = Color(darkness,darkness,darkness + blueness,1)
+      panel.add_stylebox_override("panel", style)
+      panel.add_child(entry_grid)
+      
+      grid.add_child(panel)
+    return grid
+  
+  if typeof(data) == 19:
+    data_type = "array"
+    var entry_grid = GridContainer.new()
+    entry_grid.columns = 1
+    for entries in data:
+      entry_grid.add_child(build_form(entries))
+    grid.add_child(entry_grid)
+    return grid
+
+  if typeof(data) == 4: data_type = "string"
+  if typeof(data) == 3: data_type = "real number"
+  if typeof(data) == 1: data_type = "boolean"
+  if typeof(data) == 0: data_type = "null pointer"
+  var terminal = Label.new()
+  terminal.text = str(data)
+  grid.add_child(terminal)
+  return grid
 
 func _init():
   load_settings()
