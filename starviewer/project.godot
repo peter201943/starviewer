@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "GridContainer",
 "class": "SimpleDictionaryUI",
 "language": "GDScript",
-"path": "res://app/concepts/settings/SimpleDictionaryUI.gd"
+"path": "res://app/concepts/utilities/SimpleDictionaryUI.gd"
 } ]
 _global_script_class_icons={
 "SimpleDictionaryUI": ""
@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Starviewer"
-run/main_scene="res://app/StarViewer.tscn"
+run/main_scene="res://app/StarViewer/StarViewer.tscn"
 config/icon="res://icon.png"
 
 [input]

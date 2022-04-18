@@ -33,10 +33,10 @@ func _on_info_pressed():
   dir_info.text = \
     "# user://" + \
     " (" + ProjectSettings.globalize_path("user://") + ")\n" + \
-    Settings.dir_contents("user://") + \
+    Utilities.dir_contents("user://") + \
     "# res://" + \
     " (" + ProjectSettings.globalize_path("res://") + ")\n" + \
-    Settings.dir_contents("res://")
+    Utilities.dir_contents("res://")
   var settings_info = SimpleDictionaryUI.new(Settings.raw_settings)
   info_box = VSplitContainer.new()
   self.add_child(info_box)

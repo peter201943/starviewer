@@ -5,8 +5,6 @@ class_name SimpleDictionaryUI
 Constructs a 2D Control Panel with Spacing and Text from the Dictionary
 """
 
-# TODO REMOVE PREFIXES
-
 enum DATA_TYPE {
   NULL = 0,
   BOOLEAN = 1,
