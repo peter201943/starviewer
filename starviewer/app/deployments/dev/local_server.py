@@ -7,6 +7,7 @@ handler = http.server.SimpleHTTPRequestHandler
 with socketserver.TCPServer(("", port), handler) as httpd:
   print(f"StarViewer: Serving \"{getcwd()}\" at \"localhost:{port}\"")
   print("StarViewer: Kill with ctrl+c at any time")
+  print("StarViewer: If errors exist in browser, consider \"Hard Refreshing\" with ctrl+F5")
   try:
     httpd.serve_forever()
   except KeyboardInterrupt:
