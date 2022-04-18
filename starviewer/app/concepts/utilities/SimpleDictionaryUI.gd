@@ -3,6 +3,8 @@ class_name SimpleDictionaryUI
 
 """
 Constructs a 2D Control Panel with Spacing and Text from the Dictionary
+
+Really ought to investigate adding a custom signal/method that tells this to "build" itself... Huh.
 """
 
 enum DATA_TYPE {
