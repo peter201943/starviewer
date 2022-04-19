@@ -136,8 +136,7 @@
 	</div>
 
 	<script type='text/javascript' src='index.js'></script>
-	<script type='text/javascript'>//<![CDATA[
-
+	<script type="text/javascript">
 		// <StarViewer:settings>
 		var StarViewerSettings = {
 			// These are settings used tby the StarViewer app for loading resources.
@@ -146,13 +145,30 @@
 			// `localhost:8005` is arbitrary, if errors in loading exist, check the serving port!
 			// See `starviewer/app/deployments/readme.md` for more information.
 			// This code copyright Creative Commons Attribution 4.0 Public License.
-			app_mode: 					"dev",
-			models_endpoint: 		"localhost:8005/models/",
-			textures_endpoint:	"localhost:8005/textures/",
-			stars_endpoint: 		"localhost:8005/warpzone/stars.json",
-			semantics: 					"[\"2022-04-18\", \"null-warpzone-starviewer\", \"version-1\"]"
+			app: {
+				mode: "dev"
+			},
+			models: {
+				endpoint: "localhost:8005/models/"
+			},
+			textures:	{
+				endpoint: "localhost:8005/textures/"
+			},
+			users: {
+				endpoint: "localhost:8005/warpzone/stars.json"
+			},
+			semantics: [
+				"2022-04-18",
+				"nullcasting-warpzone-starviewer",
+				"version-1",
+				"CC-BY-4.0",
+				"godot3.4.4",
+				"web-dev"
+			]
 		}
 		// </StarViewer:settings>
+	</script>
+	<script type='text/javascript'>//<![CDATA[
 
 		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":6097104,"index.wasm":17503191},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);

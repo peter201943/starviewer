@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cc-by-logo.png-47c5e36c92d5fdd62190d94a8ff1a663.stex"
+path="res://.import/cc-by-logo.png-a2419047327ddf9f640dbc3af3c2484b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://app/deployments/dev/textures/cc-by-logo.png"
-dest_files=[ "res://.import/cc-by-logo.png-47c5e36c92d5fdd62190d94a8ff1a663.stex" ]
+source_file="res://deployments/dev/textures/cc-by-logo.png"
+dest_files=[ "res://.import/cc-by-logo.png-a2419047327ddf9f640dbc3af3c2484b.stex" ]
 
 [params]
 

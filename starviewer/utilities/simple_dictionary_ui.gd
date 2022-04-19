@@ -16,23 +16,21 @@ enum DATA_TYPE {
   ARRAY = 19,
 }
 
+export var data: Dictionary
+
 var darkness = 0.1
 var blueness = 0.1
 
-func _init(data):
+func build():
 
-  print("(DEBUG) SimpleDictionaryUI._init: Making new Instance")
+  print("(DEBUG) SimpleDictionaryUI.build: Making new Instance")
 
   darkness += 0.05
   if darkness > 0.5: darkness = 0.1
   blueness += 0.1
   if blueness > 0.5: blueness = 0.1
   
-  var grid = GridContainer.new()
-  var data_type = "(???)"
-  
-  if typeof(data) == 18:
-    data_type = "dict"
+  if typeof(data) == DATA_TYPE.DICTIONARY:
     for key in data.keys():
       print("(DEBUG) SimpleDictionaryUI._init: Adding Key: " + key)
       var entry_value = data[key]
@@ -53,23 +51,19 @@ func _init(data):
       panel.add_stylebox_override("panel", style)
       panel.add_child(entry_grid)
       
-      grid.add_child(panel)
-    return grid
+      self.add_child(panel)
+    return
   
-  if typeof(data) == 19:
-    data_type = "array"
+  if typeof(data) == DATA_TYPE.ARRAY:
     var entry_grid = GridContainer.new()
     entry_grid.columns = 1
     for entries in data:
       entry_grid.add_child(get_script().new(entries))
-    grid.add_child(entry_grid)
-    return grid
+    self.add_child(entry_grid)
+    return
 
-  if typeof(data) == 4: data_type = "string"
-  if typeof(data) == 3: data_type = "real number"
-  if typeof(data) == 1: data_type = "boolean"
-  if typeof(data) == 0: data_type = "null pointer"
-  var terminal = Label.new()
-  terminal.text = str(data)
-  grid.add_child(terminal)
-  return grid
+  if [DATA_TYPE.BOOLEAN, DATA_TYPE.NULL, DATA_TYPE.REAL_NUMBER, DATA_TYPE.STRING].has(typeof(data)):
+    var terminal = Label.new()
+    terminal.text = str(data)
+    self.add_child(terminal)
+    return

@@ -37,7 +37,8 @@ func _on_info_pressed():
     "# res://" + \
     " (" + ProjectSettings.globalize_path("res://") + ")\n" + \
     Utilities.dir_contents("res://")
-  var settings_info = SimpleDictionaryUI.new(Settings.raw_settings)
+  var settings_info = SimpleDictionaryUI.new()
+  settings_info.data = App.settings
   info_box = VSplitContainer.new()
   self.add_child(info_box)
   info_box.add_child(settings_info)

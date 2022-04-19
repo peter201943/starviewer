@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://app/StarViewer/star_view/star_view.gd" type="Script" id=1]
+[ext_resource path="res://app/star_viewer/star_view.gd" type="Script" id=1]
 [ext_resource path="res://assets/sounds/interface-button-6.wav" type="AudioStream" id=2]
 [ext_resource path="res://assets/sounds/fantasy-ui-button.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/sounds/arcade-button-press.wav" type="AudioStream" id=4]

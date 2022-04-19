@@ -12,17 +12,40 @@ _global_script_classes=[ {
 "base": "GridContainer",
 "class": "SimpleDictionaryUI",
 "language": "GDScript",
-"path": "res://app/concepts/utilities/SimpleDictionaryUI.gd"
+"path": "res://utilities/simple_dictionary_ui.gd"
+}, {
+"base": "Node",
+"class": "StarViewerModels",
+"language": "GDScript",
+"path": "res://utilities/star_viewer_models.gd"
+}, {
+"base": "Node",
+"class": "StarViewerTextures",
+"language": "GDScript",
+"path": "res://utilities/star_viewer_textures.gd"
+}, {
+"base": "Node",
+"class": "StarViewerUsers",
+"language": "GDScript",
+"path": "res://utilities/star_viewer_users.gd"
 } ]
 _global_script_class_icons={
-"SimpleDictionaryUI": ""
+"SimpleDictionaryUI": "",
+"StarViewerModels": "",
+"StarViewerTextures": "",
+"StarViewerUsers": ""
 }
 
 [application]
 
 config/name="Starviewer"
-run/main_scene="res://app/StarViewer/StarViewer.tscn"
+run/main_scene="res://app/star_viewer/star_viewer.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Utilities="*res://utilities/utilities.gd"
+App="*res://app/app.gd"
 
 [input]
 

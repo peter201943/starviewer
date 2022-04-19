@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://app/display_scenes/default/DefaultScene.tscn" type="PackedScene" id=1]
-[ext_resource path="res://app/StarViewer/user_stars_screen/UserStarsScene.tscn" type="PackedScene" id=2]
-[ext_resource path="res://app/StarViewer/search_screen/SearchScreen.tscn" type="PackedScene" id=3]
-[ext_resource path="res://app/StarViewer/star_view/StarView.tscn" type="PackedScene" id=4]
-[ext_resource path="res://app/concepts/camera/StarUser.tscn" type="PackedScene" id=5]
+[ext_resource path="res://app/star_viewer/display_scenes/default/default_display.tscn" type="PackedScene" id=1]
+[ext_resource path="res://app/star_viewer/user_search/user_search.tscn" type="PackedScene" id=3]
+[ext_resource path="res://app/star_viewer/StarView.tscn" type="PackedScene" id=4]
+[ext_resource path="res://app/star_viewer/display_scenes/scene_viewer/scene_viewer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/songs/stevia-sphere-where-the-magic-happens.ogg" type="AudioStream" id=6]
 
 [node name="StarViewer" type="Spatial"]
@@ -19,7 +18,5 @@ stream = ExtResource( 6 )
 autoplay = true
 
 [node name="SearchScreen" parent="." instance=ExtResource( 3 )]
-
-[node name="UsersStarScreen" parent="." instance=ExtResource( 2 )]
 
 [node name="StarView" parent="." instance=ExtResource( 4 )]

@@ -1,5 +1,7 @@
 
-# Star View
+# StarViewer
+
+The User Interface components to the StarViewer app.
 
 The minimal UI frame/border shown around a star when it is being viewed.
 

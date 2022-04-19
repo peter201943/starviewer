@@ -1,7 +1,9 @@
 
-# Stars
+# Utilities
 
-(Uncertain if really necessary - WIP).
+Rules and procedures for reading the `settings.json`.
+
+TODO add usage documentation.
 
 In-memory representation of `stars.json`.
 
@@ -21,4 +23,5 @@ In-memory representation of `stars.json`.
   ]
 }
 ```
+
 

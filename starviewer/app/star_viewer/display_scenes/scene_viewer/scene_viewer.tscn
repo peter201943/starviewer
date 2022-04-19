@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://app/concepts/camera/fps_mouselook.gd" type="Script" id=1]
+[ext_resource path="res://app/star_viewer/display_scenes/scene_viewer/fps_mouselook.gd" type="Script" id=1]
 [ext_resource path="res://assets/misc/default_spatialmaterial.tres" type="Material" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
