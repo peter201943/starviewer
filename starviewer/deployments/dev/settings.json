@@ -1,6 +1,0 @@
-{
-  "app.mode":       "dev",
-  "stars.path":     "/warpzone/stars.json",
-  "models.path":    "/models/",
-  "textures.path":  "/textures/"
-}

@@ -3,10 +3,9 @@ class_name SimpleDictionaryUI
 
 """
 Constructs a 2D Control Panel with Spacing and Text from the Dictionary
-
-Really ought to investigate adding a custom signal/method that tells this to "build" itself... Huh.
 """
 
+# For controlling how items are printed
 enum DATA_TYPE {
   NULL = 0,
   BOOLEAN = 1,
@@ -16,23 +15,32 @@ enum DATA_TYPE {
   ARRAY = 19,
 }
 
-export var data: Dictionary
+# In case someone wants to define a SimpleDictionaryUI from the editor.
+# Will attempt to be loaded by `build` if `data` is `null`
+export var editor_data: String
+
+# The actual data
+var data
 
 var darkness = 0.1
 var blueness = 0.1
 
 func build():
+  
+  # Check if `editor_data` has been set if `data` is empty before printing it
+  if typeof(data) == DATA_TYPE.NULL:
+    if editor_data.length() > 1:
+      data = Utilities.load_json_string(editor_data)
 
-  print("(DEBUG) SimpleDictionaryUI.build: Making new Instance")
-
+  # Set color to be slightly different each time
   darkness += 0.05
   if darkness > 0.5: darkness = 0.1
   blueness += 0.1
   if blueness > 0.5: blueness = 0.1
   
+  # Add dictionary keys as vertical stacks
   if typeof(data) == DATA_TYPE.DICTIONARY:
     for key in data.keys():
-      print("(DEBUG) SimpleDictionaryUI._init: Adding Key: " + key)
       var entry_value = data[key]
       var entry_grid = GridContainer.new()
       entry_grid.columns = 3
@@ -42,7 +50,10 @@ func build():
       key_label.add_color_override("font_color", Color(0,1,0,1))
       entry_grid.add_child(key_label)
       entry_grid.add_child(VSeparator.new())
-      entry_grid.add_child(get_script().new(entry_value))
+      var next_frame = get_script().new()
+      next_frame.data = entry_value
+      next_frame.build()
+      entry_grid.add_child(next_frame)
       
       var panel = PanelContainer.new()
       panel.name = "panel"
@@ -54,16 +65,27 @@ func build():
       self.add_child(panel)
     return
   
+  # Add Lists as Vertical Stacks
   if typeof(data) == DATA_TYPE.ARRAY:
     var entry_grid = GridContainer.new()
     entry_grid.columns = 1
     for entries in data:
-      entry_grid.add_child(get_script().new(entries))
+      var next_frame = get_script().new()
+      next_frame.data = entries
+      next_frame.build()
+      entry_grid.add_child(next_frame)
     self.add_child(entry_grid)
     return
 
+  # Any other recognizable type of basic data
   if [DATA_TYPE.BOOLEAN, DATA_TYPE.NULL, DATA_TYPE.REAL_NUMBER, DATA_TYPE.STRING].has(typeof(data)):
     var terminal = Label.new()
     terminal.text = str(data)
     self.add_child(terminal)
     return
+  
+  # For any other unrecognizable kind of data
+  var terminal = Label.new()
+  terminal.text = str(data)
+  self.add_child(terminal)
+  return

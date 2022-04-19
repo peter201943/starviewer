@@ -6,7 +6,7 @@ onready var sfx_btn_press: AudioStreamPlayer = get_node("sfx_btn_press")
 
 var pressed = false
 
-var info_box: VSplitContainer
+var info_box: SimpleDictionaryUI
 
 func _on_prev_star_pressed():
   sfx_btn_press.play()
@@ -29,22 +29,11 @@ func _on_info_pressed():
   if is_instance_valid(info_box):
     info_box.queue_free()
     return
-  var dir_info = Label.new()
-  dir_info.text = \
-    "# user://" + \
-    " (" + ProjectSettings.globalize_path("user://") + ")\n" + \
-    Utilities.dir_contents("user://") + \
-    "# res://" + \
-    " (" + ProjectSettings.globalize_path("res://") + ")\n" + \
-    Utilities.dir_contents("res://")
-  var settings_info = SimpleDictionaryUI.new()
-  settings_info.data = App.settings
-  info_box = VSplitContainer.new()
+  info_box = SimpleDictionaryUI.new()
+  info_box.data = App.settings
+  info_box.build()
   self.add_child(info_box)
-  info_box.add_child(settings_info)
-  info_box.add_child(dir_info)
-  if Settings.is_web_env():
-    JavaScript.eval("alert(`(TEMP) StarViewerSettings: ${JSON.stringify(StarViewerSettings)}`);")
+  print("TEMP App.is_native: " + String(App.is_native))
 
 func _on_button_entered():
   sfx_btn_enter.play()

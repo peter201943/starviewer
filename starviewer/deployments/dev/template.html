@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
+  <head>
+  	<meta name='viewport' content='width=device-width, user-scalable=no' />
+    <title>$GODOT_PROJECT_NAME</title>
+    <meta charset="UTF-8">
+    <link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
+    <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
+    $GODOT_HEAD_INCLUDE
+  </head>
+  <body>
+    <canvas id="canvas">
+      HTML5 canvas appears to be unsupported in the current browser.<br />
+      Please try updating or use a different browser.
+    </canvas>
+    <script type="text/javascript">
+      var StarViewerSettings = {
+        // These are settings used tby the StarViewer app for loading resources.
+        // Please modify for your installation.
+        // These were automatically generated for the `dev` deployment.
+        // `localhost:8005` is arbitrary, if errors in loading exist, check the serving port!
+        // See `starviewer/app/deployments/readme.md` for more information.
+        // This code copyright Creative Commons Attribution 4.0 Public License.
+        app: {
+          mode: "dev"
+        },
+        models: {
+          endpoint: "localhost:8005/models/"
+        },
+        textures:	{
+          endpoint: "localhost:8005/textures/"
+        },
+        users: {
+          endpoint: "localhost:8005/warpzone/stars.json"
+        },
+        semantics: [
+          "2022-04-18",
+          "nullcasting-warpzone-starviewer",
+          "version-1",
+          "CC-BY-4.0",
+          "godot3.4.4",
+          "web-dev"
+        ]
+      }
+    </script>
+    <script src="$GODOT_URL"></script>
+    <script>
+      var engine = new Engine($GODOT_CONFIG);
+      engine.startGame();
+    </script>
+  </body>
+</html>

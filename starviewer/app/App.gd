@@ -46,7 +46,7 @@ func _init():
   for potential_setting_name in settings.keys():
     assert(
       acceptable_toplevel_keys.has(potential_setting_name),
-      "Unknown Setting: \"" + potential_setting_name + "\": \"" + settings[potential_setting_name] + "\", please fix settings.json"
+      "Unknown Setting: \"" + potential_setting_name + "\": \"" + String(settings[potential_setting_name]) + "\", please fix settings.json"
     )
 
   # Now read and load the dictionary
@@ -60,7 +60,7 @@ func _init():
           var app_mode = app_settings[app_setting_name]
           assert(
             ["dev","prod"].has(app_mode),
-            "Unknown App Mode: \"" + app_mode + "\", please fix settings.json"
+            "Unknown App Mode: \"" + String(app_mode) + "\", please fix settings.json"
           )
           if app_mode == "dev":
             is_dev_mode = true

@@ -1,0 +1,22 @@
+{
+  "app": {
+    "mode": "dev"
+  },
+  "models": {
+    "endpoint": "localhost:8005/models/"
+  },
+  "textures":	{
+    "endpoint": "localhost:8005/textures/"
+  },
+  "users": {
+    "endpoint": "localhost:8005/warpzone/stars.json"
+  },
+  "semantics": [
+    "2022-04-18",
+    "nullcasting-warpzone-starviewer",
+    "version-1",
+    "CC-BY-4.0",
+    "godot3.4.4",
+    "web-dev"
+  ]
+}
